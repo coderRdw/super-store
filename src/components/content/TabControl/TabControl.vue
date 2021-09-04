@@ -11,7 +11,7 @@
 <script>
 export default {
   name: "TabControl",
-//  接受传入的title
+//  接收Home传入的title
   props:{
     ctitles:{
       type:Array,
