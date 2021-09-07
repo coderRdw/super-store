@@ -1,5 +1,5 @@
 <template>
-<div class="goods-item">
+<div class="goods-item" @click="goodsClick">
     <img :src="goodslistitem.show.img" alt="" @load="imgLoad">
     <div class="goods-info">
       <p>{{goodslistitem.title}}</p>
@@ -23,6 +23,16 @@ export default {
     imgLoad(){
       // console.log("imgLoad")
       this.$bus.$emit("itemImageLoad")
+    },
+    goodsClick(){
+    // 点击Item，就跳转到详情页
+      /*
+      * 1.创建详情组件
+      * 2.配置路由
+      * 3.js实现跳转
+      * */
+      //页面从home跳转到detail页面要传递goodsitem 的 id参数；
+      this.$router.push("/detail/"+this.goodslistitem.iid)
     }
   }
 }

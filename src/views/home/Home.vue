@@ -77,7 +77,7 @@ export default {
       //添加防抖功能
       const refresh = debounce(this.$refs.scroll.refresh,50);
       this.$bus.$on('itemImageLoad',()=>{
-        refresh();
+          refresh();
       })
     // 2.取TabControl的offsetTop
     //所有的组件都有一个$el属性,它可以拿到组件中的元素值。

@@ -19,7 +19,7 @@ export default {
   height: 44px;
   text-align: center;
   line-height: 44px;/*//可将文字垂直居中显示*/
-  box-shadow: 0 1px 1px rgba(100,100,100,0.01)
+  box-shadow: 0 1px 1px rgba(100,100,100,0.1)
 /*  设置阴影*/
 }
 .left, .right{
